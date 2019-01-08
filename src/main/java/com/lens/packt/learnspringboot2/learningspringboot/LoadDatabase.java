@@ -12,9 +12,9 @@ public class LoadDatabase {
     CommandLineRunner init(ChapterRepository repository) {
         return args -> {
             Flux.just(
-                    new Chapter("Quick Start with Java"),
-                    new Chapter("Reactive Web with Spring Boot"),
-                    new Chapter("...and more!"))
+                    new Chapter("Thor"),
+                    new Chapter("...was fuckin' "),
+                    new Chapter("awesome!"))
                     .flatMap(repository::save)
                     .subscribe(System.out::println);
         };
