@@ -1,0 +1,10 @@
+gradle bootRun
+
+./gradlew clean build
+
+ls build/libs/
+
+java -jar learning-spring-boot-0.0.1-SNAPSHOT.jar
+
+server_port=9001 java -jar learning-spring-boot-0.0.1-SNAPSHOT.jar
+
