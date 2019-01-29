@@ -8,3 +8,7 @@ java -jar learning-spring-boot-0.0.1-SNAPSHOT.jar
 
 server_port=9001 java -jar learning-spring-boot-0.0.1-SNAPSHOT.jar
 
+----
+cf push learning-spring-boot-lens -p ../learning-spring-boot/build/libs/learning-spring-boot-0.0.1-SNAPSHOT.jar
+
+http://learning-spring-boot-lens.cfapps.io/actuator/metrics/process.start.time
