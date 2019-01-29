@@ -7,3 +7,14 @@ logging:
         packt:
           learnspringboot2:
             learnspringboot: DEBUG
+endpoints:
+  health:
+    enabled: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+    metrics:
+      enabled: true
